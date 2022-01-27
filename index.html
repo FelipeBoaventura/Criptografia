@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--Aqui temos a box principal, onde ficará todo o site-->
+    <div class=boxPrincipal>
+        <!--Aqui ficará localizado o cabeçalho (imagem e título)-->
+        <div class="boxHead">
+            <img class="sherlockImagem" src="./sherlock1.png" alt="sherlock">
+            <h1 class="titulo">Shercode</h1>           
+        </div>
+    <!--Aqui ficará a box onde conterá a historiazinha do site-->
+        <div >
+            <p class="historia">Se você está aqui, é porque você teve o acesso
+                liberado por mim, Dr. Watson ou pelo arrogante miserável do Sherlock!
+                Enfim, criamos essa página para nos comunicarmos através de um 
+                codificador de mensagens feito em Javascript. Bom, não faça muitas perguntas
+                sobre isso. O Sherlock anda por aí buscando bisbilhoteiros
+                que tentam encontrar este site. 
+                Boa sorte!
+            </p>
+    
+        </div>
+    </div>
+    <!--Parte da caixa de mensagens-->
+    <div class="container">
+        <section class="caixa-form">
+            <img class="ilustra" src="" alt="">
+            <form action="">
+                <label for="input-texto">Somente letras minúsculas, sem acento</label>
+                <input class="input" type="text" id="input-texto" placeholder="digite seu texto aqui">
+                <button class="btn"  type="submit" id="btn-cripto">Criptografar <img src="img/lock-front-color.png" alt=""></button>
+                <button class="btn"  type="submit" id="btn-descripto">Decriptogafar <img src="img/key-front-color.png" alt=""></button>
+            </form>
+            
+        </section>
+
+        <section class="caixa-msg">
+            <div>
+                <h3>Mensagem Criptografada</h3>
+                <input class="input" type="text" id="msg">
+                <button class="btn" id="copiar" type="submit">copiar</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script> 
+</body>
+
+</html>
